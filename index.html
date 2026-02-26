@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>High Tech Academy – Best English Medium School in Teonthar, Rewa</title>
   <meta name="description"
-    content="High Tech Academy High School – Premier English Medium School in Baikunthdham, Kakaraha, Teonthar, Rewa (M.P.). Offering classes from Nursery to 10th with computer lab, sports ground, modern classrooms, and transportation." />
+    content="High Tech Academy High School – Premier English Medium School in Baikunthdham, Kakaraha, Teonthar, Rewa (M.P.). Classes from Nursery to 10th. Computer lab, sports ground, modern classrooms, and transportation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
@@ -16,25 +16,28 @@
 
 <body>
 
+  <!-- ========== CURSOR GLOW ========== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="nav-brand">
         <div class="nav-logo">
-          <span class="logo-icon">🎓</span>
+          <span>🎓</span>
         </div>
         <div class="nav-text">
-          <span class="brand-name">High Tech Academy</span>
-          <span class="brand-tagline">High School</span>
+          <span class="brand-name">HIGH TECH</span>
+          <span class="brand-tagline">ACADEMY</span>
         </div>
       </div>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#features" class="nav-link">Facilities</a></li>
-        <li><a href="#classes" class="nav-link">Classes</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+        <li><a href="#home" class="nav-link active" id="nl-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nl-about">About</a></li>
+        <li><a href="#features" class="nav-link" id="nl-features">Facilities</a></li>
+        <li><a href="#classes" class="nav-link" id="nl-classes">Classes</a></li>
+        <li><a href="#gallery" class="nav-link" id="nl-gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-link contact-btn" id="nl-contact">Enroll Now</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
@@ -44,73 +47,101 @@
 
   <!-- ========== HERO ========== -->
   <section class="hero" id="home">
+    <!-- Cinematic background layers -->
     <div class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="floating-shapes">
-        <div class="shape s1"></div>
-        <div class="shape s2"></div>
-        <div class="shape s3"></div>
-        <div class="shape s4"></div>
-      </div>
+      <div class="hero-vignette"></div>
+      <div class="hero-vignette-bottom"></div>
+      <div class="hero-noise"></div>
+      <!-- Floating particles -->
+      <div class="particles" id="particles"></div>
     </div>
+
+    <!-- Netflix-style hero content (left-aligned like Netflix shows) -->
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
-        Best English Medium School · Teonthar, Rewa
+        🏆 &nbsp;#1 English Medium School · Teonthar Region
       </div>
+      <div class="hero-eyebrow">NOW ENROLLING 2025–26</div>
       <h1 class="hero-title">
-        <span class="title-line">High Tech</span>
-        <span class="title-line accent">Academy</span>
-        <span class="title-line">High School</span>
+        <span class="title-top">High Tech</span>
+        <span class="title-main">Academy</span>
+        <span class="title-sub">High School</span>
       </h1>
       <p class="hero-subtitle">
-        Nurturing young minds with quality English education, cutting-edge facilities,
-        and a passion for excellence — from Nursery to Class 10th.
+        Nurturing brilliant minds from <strong>Nursery to Class 10th</strong> — with premium English medium education,
+        cutting-edge facilities, and a community that cares.
       </p>
       <div class="hero-actions">
-        <a href="#about" class="btn btn-primary" id="exploreBtn">
-          <span>Explore School</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7" />
+        <a href="#contact" class="btn btn-primary" id="enrollBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
           </svg>
+          Enroll Now
         </a>
-        <a href="#contact" class="btn btn-outline" id="contactHeroBtn">
-          <span>Contact Us</span>
+        <a href="#about" class="btn btn-ghost" id="learnBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4M12 8h.01" />
+          </svg>
+          Learn More
         </a>
       </div>
+
+      <!-- Netflix-style maturity / info tags -->
+      <div class="hero-tags">
+        <span class="hero-tag">Nur–10th</span>
+        <span class="hero-tag-dot">•</span>
+        <span class="hero-tag">English Medium</span>
+        <span class="hero-tag-dot">•</span>
+        <span class="hero-tag">MPBSE Affiliated</span>
+        <span class="hero-tag-dot">•</span>
+        <span class="hero-tag">Est. Teonthar</span>
+      </div>
+
+      <!-- Stat strip -->
       <div class="hero-stats">
-        <div class="stat-card">
-          <span class="stat-num">Nur–10<sup>th</sup></span>
-          <span class="stat-label">Classes Offered</span>
+        <div class="stat-item">
+          <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Students</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-card">
-          <span class="stat-num">100%</span>
-          <span class="stat-label">English Medium</span>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Expert Teachers</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-card">
-          <span class="stat-num">4+</span>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="4">0</span><span class="stat-plus"></span>
           <span class="stat-label">Premium Facilities</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">English Medium</span>
         </div>
       </div>
     </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-dot"></div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-cue">
+      <div class="scroll-arrow"></div>
     </div>
   </section>
 
   <!-- ========== TICKER ========== -->
   <div class="ticker-wrapper">
-    <div class="ticker-label">📢 Notice</div>
+    <div class="ticker-label">📢 Latest</div>
     <div class="ticker-track">
-      <div class="ticker-content">
-        🎉 Admissions Open for Session 2025–26 &nbsp;|&nbsp; 📚 Classes from Nursery to 10th &nbsp;|&nbsp; 🚌
-        Transportation Available &nbsp;|&nbsp; 💻 Computer Lab Facility &nbsp;|&nbsp; 🏅 Best English Medium School in
-        Teonthar Region &nbsp;|&nbsp; 📞 Call: 7722831001 / 9300340009 &nbsp;|&nbsp;
-        🎉 Admissions Open for Session 2025–26 &nbsp;|&nbsp; 📚 Classes from Nursery to 10th &nbsp;|&nbsp; 🚌
-        Transportation Available &nbsp;|&nbsp; 💻 Computer Lab Facility &nbsp;|&nbsp; 🏅 Best English Medium School in
-        Teonthar Region &nbsp;|&nbsp; 📞 Call: 7722831001 / 9300340009 &nbsp;|&nbsp;
+      <div class="ticker-content" id="tickerContent">
+        🎉 Admissions Open for Session 2025–26 &nbsp;|&nbsp; 📚 Classes from Nursery to 10th &nbsp;|&nbsp; 🚌 Safe
+        Transportation Available &nbsp;|&nbsp; 💻 State-of-the-art Computer Lab &nbsp;|&nbsp; 🏅 Best English Medium
+        School in Teonthar Region &nbsp;|&nbsp; 📞 Call: 7722831001 / 9300340009 &nbsp;|&nbsp; 📍 Baikunthdham,
+        Kakaraha, Teonthar, Rewa (M.P.) &nbsp;|&nbsp;
+        🎉 Admissions Open for Session 2025–26 &nbsp;|&nbsp; 📚 Classes from Nursery to 10th &nbsp;|&nbsp; 🚌 Safe
+        Transportation Available &nbsp;|&nbsp; 💻 State-of-the-art Computer Lab &nbsp;|&nbsp; 🏅 Best English Medium
+        School in Teonthar Region &nbsp;|&nbsp; 📞 Call: 7722831001 / 9300340009 &nbsp;|&nbsp; 📍 Baikunthdham,
+        Kakaraha, Teonthar, Rewa (M.P.) &nbsp;|&nbsp;
       </div>
     </div>
   </div>
@@ -118,129 +149,182 @@
   <!-- ========== ABOUT ========== -->
   <section class="about" id="about">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="section-tag">Who We Are</span>
-        <h2 class="section-title">Building Tomorrow's <span class="highlight">Leaders</span></h2>
-        <p class="section-desc">We believe every child deserves the best start in life. Our school combines world-class
-          English medium education with modern infrastructure.</p>
+        <h2 class="section-title">Building Tomorrow's <span class="text-red">Leaders</span></h2>
+        <p class="section-desc">We believe every child deserves the best start in life — combining world-class English
+          education with modern infrastructure at the heart of Teonthar, Rewa.</p>
       </div>
+
       <div class="about-grid">
-        <div class="about-visual">
-          <div class="about-img-wrapper">
-            <div class="about-img-placeholder">
-              <div class="school-illustration">
-                <div class="building">
-                  <div class="roof"></div>
-                  <div class="walls">
-                    <div class="window w1"></div>
-                    <div class="window w2"></div>
-                    <div class="window w3"></div>
-                    <div class="window w4"></div>
-                    <div class="door"></div>
-                  </div>
-                  <div class="flag-pole">
-                    <div class="flag"></div>
-                  </div>
+        <div class="about-visual reveal">
+          <div class="about-card-wrapper">
+            <!-- Animated school illustration -->
+            <div class="school-scene">
+              <div class="scene-sky">
+                <div class="scene-star s1"></div>
+                <div class="scene-star s2"></div>
+                <div class="scene-star s3"></div>
+              </div>
+              <div class="scene-building">
+                <div class="building-flag">
+                  <div class="flag-pole-line"></div>
+                  <div class="flag-tri"></div>
                 </div>
-                <div class="ground"></div>
-                <div class="tree t1">🌳</div>
-                <div class="tree t2">🌳</div>
+                <div class="building-roof"></div>
+                <div class="building-body">
+                  <div class="building-win"></div>
+                  <div class="building-win"></div>
+                  <div class="building-win"></div>
+                  <div class="building-win"></div>
+                  <div class="building-door"></div>
+                </div>
+              </div>
+              <div class="scene-ground">
+                <div class="scene-tree">🌳</div>
+                <div class="scene-tree r">🌳</div>
               </div>
             </div>
-            <div class="about-badge-card">
-              <span class="badge-icon">🏆</span>
-              <span class="badge-text">Top School<br />in Teonthar</span>
+            <!-- Floating badge -->
+            <div class="about-float-badge">
+              <span class="float-badge-icon">🏆</span>
+              <div>
+                <div class="float-badge-title">Top School</div>
+                <div class="float-badge-sub">Teonthar Region</div>
+              </div>
+            </div>
+            <!-- Rating badge -->
+            <div class="about-rating-badge">
+              <div class="rating-stars">★★★★★</div>
+              <div class="rating-label">Community Rating</div>
             </div>
           </div>
         </div>
-        <div class="about-content">
+
+        <div class="about-content reveal">
           <h3 class="about-heading">Welcome to High Tech Academy High School</h3>
           <p class="about-para">
-            Located at the heart of Baikunthdham, Kakaraha, Teonthar, Rewa (M.P.),
-            <strong>High Tech Academy High School</strong> stands as the region's premier English medium institution.
-            We offer a holistic education designed to nurture intellectual curiosity, creativity,
-            and character in every student.
+            Located at <strong>Baikunthdham, Kakaraha, Teonthar, Rewa (M.P.)</strong>, High Tech Academy High School
+            stands as the region's premier English medium institution. We offer a holistic education designed
+            to nurture intellectual curiosity, creativity, and character in every student.
           </p>
           <p class="about-para">
-            From the moment a child joins our Nursery to when they complete Class 10th,
-            we guide them with experienced faculty, modern teaching methods, and
-            state-of-the-art facilities that prepare them for tomorrow's world.
+            From the moment a child joins our Nursery to when they complete Class 10th, we guide them with
+            experienced faculty, modern teaching methods, and state-of-the-art infrastructure.
           </p>
           <div class="about-highlights">
             <div class="highlight-item">
-              <span class="hi-icon">✅</span>
+              <div class="hi-dot"></div>
               <span>English Medium Instruction</span>
             </div>
             <div class="highlight-item">
-              <span class="hi-icon">✅</span>
+              <div class="hi-dot"></div>
               <span>Experienced & Qualified Teachers</span>
             </div>
             <div class="highlight-item">
-              <span class="hi-icon">✅</span>
+              <div class="hi-dot"></div>
               <span>Holistic Child Development</span>
             </div>
             <div class="highlight-item">
-              <span class="hi-icon">✅</span>
+              <div class="hi-dot"></div>
               <span>Safe & Nurturing Environment</span>
             </div>
           </div>
-          <a href="#contact" class="btn btn-primary" id="learnMoreBtn">Learn More &rarr;</a>
+          <a href="#contact" class="btn btn-primary" id="aboutEnrollBtn">Start Enrollment →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FEATURES ========== -->
+  <!-- ========== FEATURES / NETFLIX CONTENT ROW ========== -->
   <section class="features" id="features">
     <div class="container">
-      <div class="section-header light">
+      <div class="section-header light reveal">
         <span class="section-tag">Our Facilities</span>
-        <h2 class="section-title">Premium Infrastructure for <span class="highlight">Every Student</span></h2>
-        <p class="section-desc">We've invested in world-class facilities to make learning engaging, safe, and fun for
-          all our students.</p>
+        <h2 class="section-title">Premium Infrastructure for <span class="text-red">Every Student</span></h2>
+        <p class="section-desc">World-class facilities to make learning engaging, safe, and inspiring for every child.
+        </p>
       </div>
-      <div class="features-grid">
 
-        <div class="feature-card" id="feat-computer">
-          <div class="feat-icon-wrap">
-            <div class="feat-icon">💻</div>
+      <!-- Netflix-style horizontal scroll row -->
+      <div class="feat-row-label">Featured Facilities</div>
+      <div class="features-row">
+        <div class="feat-card reveal" id="feat-computer">
+          <div class="feat-card-bg bg-blue"></div>
+          <div class="feat-card-content">
+            <div class="feat-icon-big">💻</div>
+            <div class="feat-info">
+              <div class="feat-match">New & Updated</div>
+              <h3>Computer Lab</h3>
+              <p>Modern, well-equipped lab with high-speed internet — preparing students for the digital world.</p>
+              <span class="feat-pill">Digital Learning</span>
+            </div>
+            <div class="feat-hover-overlay">
+              <div class="feat-hover-title">Computer Lab</div>
+              <div class="feat-hover-desc">High-speed internet · Latest hardware · 40+ workstations · Digital literacy
+                curriculum</div>
+              <a href="#contact" class="feat-cta-btn">Enroll Now</a>
+            </div>
           </div>
-          <h3>Computer Lab</h3>
-          <p>Modern, well-equipped computer lab with high-speed internet access, enabling students to develop digital
-            skills essential for the 21st century.</p>
-          <div class="feat-tag">Digital Learning</div>
         </div>
 
-        <div class="feature-card featured" id="feat-sports">
-          <div class="feat-icon-wrap">
-            <div class="feat-icon">⚽</div>
+        <div class="feat-card reveal featured" id="feat-sports">
+          <div class="feat-card-bg bg-red"></div>
+          <div class="feat-card-content">
+            <div class="feat-top-badge">⭐ FEATURED</div>
+            <div class="feat-icon-big">⚽</div>
+            <div class="feat-info">
+              <div class="feat-match">Top Rated</div>
+              <h3>Sports Ground</h3>
+              <p>Dedicated, well-maintained ground where students develop teamwork and competitive spirit.</p>
+              <span class="feat-pill">Physical Education</span>
+            </div>
+            <div class="feat-hover-overlay">
+              <div class="feat-hover-title">Sports Ground</div>
+              <div class="feat-hover-desc">Multi-sport arena · Trained coaches · Annual Sports Day · Health & fitness
+                focus</div>
+              <a href="#contact" class="feat-cta-btn">Enroll Now</a>
+            </div>
           </div>
-          <h3>Sports Ground</h3>
-          <p>A dedicated and well-maintained sports ground where students develop teamwork, physical fitness, and
-            competitive spirit through various sports activities.</p>
-          <div class="feat-tag">Physical Education</div>
         </div>
 
-        <div class="feature-card" id="feat-classroom">
-          <div class="feat-icon-wrap">
-            <div class="feat-icon">🏫</div>
+        <div class="feat-card reveal" id="feat-classroom">
+          <div class="feat-card-bg bg-green"></div>
+          <div class="feat-card-content">
+            <div class="feat-icon-big">🏫</div>
+            <div class="feat-info">
+              <div class="feat-match">Smart Enabled</div>
+              <h3>Modern Classrooms</h3>
+              <p>Bright, spacious, tech-enabled classrooms that foster focused learning and creativity.</p>
+              <span class="feat-pill">Smart Learning</span>
+            </div>
+            <div class="feat-hover-overlay">
+              <div class="feat-hover-title">Modern Classrooms</div>
+              <div class="feat-hover-desc">Smart boards · Air-ventilated · Comfortable seating · Interactive whiteboards
+              </div>
+              <a href="#contact" class="feat-cta-btn">Enroll Now</a>
+            </div>
           </div>
-          <h3>Modern Classrooms</h3>
-          <p>Bright, spacious, and technology-enabled classrooms designed to foster focused learning, creativity, and
-            student participation.</p>
-          <div class="feat-tag">Smart Learning</div>
         </div>
 
-        <div class="feature-card" id="feat-transport">
-          <div class="feat-icon-wrap">
-            <div class="feat-icon">🚌</div>
+        <div class="feat-card reveal" id="feat-transport">
+          <div class="feat-card-bg bg-purple"></div>
+          <div class="feat-card-content">
+            <div class="feat-icon-big">🚌</div>
+            <div class="feat-info">
+              <div class="feat-match">Safe & Reliable</div>
+              <h3>Transportation</h3>
+              <p>Safe, reliable school bus services covering all major areas — on-time, every time.</p>
+              <span class="feat-pill">Safe Commute</span>
+            </div>
+            <div class="feat-hover-overlay">
+              <div class="feat-hover-title">Transportation</div>
+              <div class="feat-hover-desc">GPS tracked buses · Supervised routes · All-area coverage · Punctual schedule
+              </div>
+              <a href="#contact" class="feat-cta-btn">Enroll Now</a>
+            </div>
           </div>
-          <h3>Transportation</h3>
-          <p>Safe and reliable school bus services covering all major areas, ensuring students travel comfortably and
-            reach school on time.</p>
-          <div class="feat-tag">Safe Commute</div>
         </div>
-
       </div>
     </div>
   </section>
@@ -248,89 +332,129 @@
   <!-- ========== CLASSES ========== -->
   <section class="classes" id="classes">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="section-tag">Academic Programs</span>
-        <h2 class="section-title">Classes from <span class="highlight">Nursery to 10th</span></h2>
-        <p class="section-desc">Our comprehensive curriculum spans from early childhood education to secondary level,
-          ensuring a seamless learning journey.</p>
+        <h2 class="section-title">Classes from <span class="text-red">Nursery to 10th</span></h2>
+        <p class="section-desc">Our comprehensive curriculum spans from early childhood to secondary level — a seamless
+          12-year learning journey.</p>
       </div>
+
       <div class="classes-grid">
-        <div class="class-card" id="class-nur">
+        <div class="class-card reveal" id="class-nur">
+          <div class="class-card-glow"></div>
           <div class="class-icon">🌱</div>
+          <div class="class-level">Level 1</div>
           <h4>Nursery</h4>
-          <p>Play-based learning to spark curiosity in the youngest learners.</p>
+          <p>Play-based learning to spark curiosity in our youngest learners.</p>
+          <div class="class-tags">
+            <span>Play-based</span>
+            <span>Creative</span>
+          </div>
         </div>
-        <div class="class-card" id="class-lkg">
+        <div class="class-card reveal" id="class-lkg">
+          <div class="class-card-glow"></div>
           <div class="class-icon">🎨</div>
+          <div class="class-level">Level 2</div>
           <h4>LKG & UKG</h4>
           <p>Foundational skills in literacy, numeracy, and social interaction.</p>
+          <div class="class-tags">
+            <span>Literacy</span>
+            <span>Numeracy</span>
+          </div>
         </div>
-        <div class="class-card" id="class-pri">
+        <div class="class-card reveal" id="class-pri">
+          <div class="class-card-glow"></div>
           <div class="class-icon">📖</div>
+          <div class="class-level">Level 3</div>
           <h4>Class 1–5</h4>
-          <p>Primary education with core subjects in English medium.</p>
+          <p>Primary education with core subjects in full English medium.</p>
+          <div class="class-tags">
+            <span>English</span>
+            <span>Science</span>
+          </div>
         </div>
-        <div class="class-card" id="class-mid">
+        <div class="class-card reveal" id="class-mid">
+          <div class="class-card-glow"></div>
           <div class="class-icon">🔬</div>
+          <div class="class-level">Level 4</div>
           <h4>Class 6–8</h4>
           <p>Middle school with science, mathematics, and languages.</p>
+          <div class="class-tags">
+            <span>Science</span>
+            <span>Maths</span>
+          </div>
         </div>
-        <div class="class-card" id="class-sec">
+        <div class="class-card reveal featured-class" id="class-sec">
+          <div class="class-card-glow red"></div>
+          <div class="class-badge-top">BOARD PREP</div>
           <div class="class-icon">🎓</div>
+          <div class="class-level">Level 5</div>
           <h4>Class 9–10</h4>
-          <p>Board exam preparation for MP Board with expert guidance.</p>
+          <p>MP Board exam preparation with expert faculty & rigorous coaching.</p>
+          <div class="class-tags">
+            <span>MPBSE</span>
+            <span>Expert Coaching</span>
+          </div>
         </div>
       </div>
-      <div class="classes-cta">
-        <div class="cta-card">
-          <h3>🎉 Admissions Open 2025–26</h3>
-          <p>Secure your child's future with the best English medium education in Teonthar, Rewa.</p>
-          <a href="#contact" class="btn btn-primary" id="admissionBtn">Apply for Admission &rarr;</a>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner reveal">
+        <div class="cta-banner-bg"></div>
+        <div class="cta-banner-content">
+          <div class="cta-banner-text">
+            <div class="cta-eyebrow">LIMITED SEATS AVAILABLE</div>
+            <h3>🎉 Admissions Open — 2025–26</h3>
+            <p>Secure your child's future with the best English medium education in Teonthar, Rewa. Don't miss out!</p>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-large" id="admissionBtn">Apply for Admission →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========== WHY US ========== -->
-  <section class="why-us">
+  <section class="why-us" id="why">
     <div class="container">
-      <div class="why-content">
-        <div class="section-header left-align">
-          <span class="section-tag">Why Choose Us</span>
-          <h2 class="section-title">The High Tech Academy <span class="highlight">Difference</span></h2>
+      <div class="section-header left-align reveal">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">The High Tech Academy <span class="text-red">Difference</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal" id="why-1">
+          <div class="why-num">01</div>
+          <div class="why-bar"></div>
+          <div class="why-text">
+            <h4>Best English Medium in the Region</h4>
+            <p>Top-quality English medium education with highly qualified teaching staff who prioritize each student's
+              individual growth and potential.</p>
+          </div>
         </div>
-        <div class="why-list">
-          <div class="why-item">
-            <div class="why-num">01</div>
-            <div class="why-text">
-              <h4>Best English Medium in the Region</h4>
-              <p>We provide top-quality English medium education with highly qualified teaching staff who prioritize
-                each student's individual growth.</p>
-            </div>
+        <div class="why-item reveal" id="why-2">
+          <div class="why-num">02</div>
+          <div class="why-bar"></div>
+          <div class="why-text">
+            <h4>Holistic Student Development</h4>
+            <p>Academics are just the beginning. We nurture creativity, sport, character, and leadership through a fully
+              balanced school program.</p>
           </div>
-          <div class="why-item">
-            <div class="why-num">02</div>
-            <div class="why-text">
-              <h4>Holistic Student Development</h4>
-              <p>Academics are just the beginning. We nurture creativity, sport, character, and leadership through a
-                balanced school program.</p>
-            </div>
+        </div>
+        <div class="why-item reveal" id="why-3">
+          <div class="why-num">03</div>
+          <div class="why-bar"></div>
+          <div class="why-text">
+            <h4>Technology-Integrated Learning</h4>
+            <p>With our computer lab and smart classrooms, students gain hands-on experience with technology from an
+              early age, building future-ready skills.</p>
           </div>
-          <div class="why-item">
-            <div class="why-num">03</div>
-            <div class="why-text">
-              <h4>Technology-Integrated Learning</h4>
-              <p>With our computer lab and smart classrooms, students gain hands-on experience with technology from an
-                early age.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num">04</div>
-            <div class="why-text">
-              <h4>Safe & Supportive Community</h4>
-              <p>Our school is a safe, inclusive, and welcoming environment where every child is valued, respected, and
-                encouraged to thrive.</p>
-            </div>
+        </div>
+        <div class="why-item reveal" id="why-4">
+          <div class="why-num">04</div>
+          <div class="why-bar"></div>
+          <div class="why-text">
+            <h4>Safe & Supportive Community</h4>
+            <p>Our school is a safe, inclusive, and welcoming environment where every child is valued, respected, and
+              encouraged to thrive every day.</p>
           </div>
         </div>
       </div>
@@ -340,45 +464,64 @@
   <!-- ========== GALLERY ========== -->
   <section class="gallery" id="gallery">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="section-tag">School Life</span>
-        <h2 class="section-title">A Glimpse of <span class="highlight">Our Campus</span></h2>
+        <h2 class="section-title">A Glimpse of <span class="text-red">Our Campus</span></h2>
+        <p class="section-desc">Experience the vibrant life at High Tech Academy through our campus highlights.</p>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item gi-1">
-          <div class="gallery-placeholder">
+        <div class="gallery-item gi-1 reveal">
+          <div class="gallery-inner">
             <span class="gallery-emoji">💻</span>
-            <span class="gallery-label">Computer Lab</span>
+            <div class="gallery-info">
+              <span class="gallery-label">Computer Lab</span>
+              <span class="gallery-sub">Digital Learning Hub</span>
+            </div>
           </div>
         </div>
-        <div class="gallery-item gi-2">
-          <div class="gallery-placeholder">
+        <div class="gallery-item gi-2 reveal">
+          <div class="gallery-inner">
             <span class="gallery-emoji">⚽</span>
-            <span class="gallery-label">Sports Ground</span>
+            <div class="gallery-info">
+              <span class="gallery-label">Sports Ground</span>
+              <span class="gallery-sub">Athletics & Team Sports</span>
+            </div>
           </div>
         </div>
-        <div class="gallery-item gi-3">
-          <div class="gallery-placeholder">
+        <div class="gallery-item gi-3 reveal">
+          <div class="gallery-inner">
             <span class="gallery-emoji">🏫</span>
-            <span class="gallery-label">Modern Classrooms</span>
+            <div class="gallery-info">
+              <span class="gallery-label">Modern Classrooms</span>
+              <span class="gallery-sub">Smart Learning Spaces</span>
+            </div>
           </div>
         </div>
-        <div class="gallery-item gi-4">
-          <div class="gallery-placeholder">
+        <div class="gallery-item gi-4 reveal">
+          <div class="gallery-inner">
             <span class="gallery-emoji">📚</span>
-            <span class="gallery-label">Library</span>
+            <div class="gallery-info">
+              <span class="gallery-label">Library</span>
+              <span class="gallery-sub">Knowledge & Reading</span>
+            </div>
           </div>
         </div>
-        <div class="gallery-item gi-5">
-          <div class="gallery-placeholder">
+        <div class="gallery-item gi-5 reveal">
+          <div class="gallery-inner">
             <span class="gallery-emoji">🚌</span>
-            <span class="gallery-label">School Transport</span>
+            <div class="gallery-info">
+              <span class="gallery-label">School Transport</span>
+              <span class="gallery-sub">GPS Tracked & Safe</span>
+            </div>
           </div>
         </div>
-        <div class="gallery-item gi-6">
-          <div class="gallery-placeholder">
+        <div class="gallery-item gi-6 reveal">
+          <div class="gallery-inner">
             <span class="gallery-emoji">🎨</span>
-            <span class="gallery-label">Activities</span>
+            <div class="gallery-info">
+              <span class="gallery-label">Activities</span>
+              <span class="gallery-sub">Arts & Co-curricular</span>
+            </div>
           </div>
         </div>
       </div>
@@ -388,14 +531,14 @@
   <!-- ========== CONTACT ========== -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Contact <span class="highlight">High Tech Academy</span></h2>
+        <h2 class="section-title">Contact <span class="text-red">High Tech Academy</span></h2>
         <p class="section-desc">We're here to answer all your questions about admissions, curriculum, and school life.
-          Reach out to us today!</p>
+        </p>
       </div>
       <div class="contact-wrapper">
-        <div class="contact-info">
+        <div class="contact-info reveal">
           <div class="contact-card" id="info-address">
             <div class="contact-icon">📍</div>
             <div class="contact-detail">
@@ -425,9 +568,11 @@
             </div>
           </div>
         </div>
-        <div class="contact-form-wrap">
+
+        <div class="contact-form-wrap reveal">
           <form class="contact-form" id="contactForm">
-            <h3>Send us a Message</h3>
+            <h3>Send Us a Message</h3>
+            <p class="form-sub">Fill out the form and our team will get back to you within 24 hours.</p>
             <div class="form-group">
               <label for="fname">Full Name</label>
               <input type="text" id="fname" placeholder="Enter your full name" required />
@@ -443,19 +588,30 @@
               </div>
             </div>
             <div class="form-group">
+              <label for="fclass">Class Interested In</label>
+              <select id="fclass">
+                <option value="">Select a class...</option>
+                <option>Nursery</option>
+                <option>LKG / UKG</option>
+                <option>Class 1–5</option>
+                <option>Class 6–8</option>
+                <option>Class 9–10</option>
+              </select>
+            </div>
+            <div class="form-group">
               <label for="fmessage">Message</label>
-              <textarea id="fmessage" rows="4" placeholder="Your message or inquiry about admissions..."
+              <textarea id="fmessage" rows="4" placeholder="Your inquiry about admissions or anything else..."
                 required></textarea>
             </div>
             <button type="submit" class="btn btn-primary full-width" id="submitBtn">
-              <span>Send Message</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M22 2L11 13" />
                 <path d="M22 2L15 22 11 13 2 9l20-7z" />
               </svg>
+              <span>Send Message</span>
             </button>
             <div class="form-success" id="formSuccess">
-              ✅ Message sent! We'll get back to you soon.
+              ✅ Message sent! We'll contact you within 24 hours.
             </div>
           </form>
         </div>
@@ -470,17 +626,18 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="footer-logo">
-              <span class="logo-icon">🎓</span>
+              <div class="footer-logo-icon">🎓</div>
               <div>
-                <span class="brand-name">High Tech Academy</span>
-                <span class="brand-tagline">High School</span>
+                <div class="brand-name">HIGH TECH ACADEMY</div>
+                <div class="brand-tagline">HIGH SCHOOL</div>
               </div>
             </div>
-            <p class="footer-desc">Best English Medium School in Teonthar, Rewa (M.P.) — Shaping bright futures since
-              establishment.</p>
+            <p class="footer-desc">Best English Medium School in Teonthar, Rewa (M.P.) — Shaping bright futures with
+              quality education and modern infrastructure.</p>
             <div class="footer-badges">
               <span class="f-badge">🏆 Top English Medium</span>
               <span class="f-badge">📚 Nur–10th</span>
+              <span class="f-badge">✅ MPBSE Affiliated</span>
             </div>
           </div>
           <div class="footer-links-col">
@@ -490,6 +647,7 @@
               <li><a href="#about">About Us</a></li>
               <li><a href="#features">Facilities</a></li>
               <li><a href="#classes">Classes</a></li>
+              <li><a href="#gallery">Gallery</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -514,7 +672,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2025 High Tech Academy High School. All rights reserved.</p>
+        <p>© <span id="footerYear"></span> High Tech Academy High School. All rights reserved.</p>
         <p>Baikunthdham, Kakaraha, Teonthar, Rewa (M.P.)</p>
       </div>
     </div>
