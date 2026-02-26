@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>High Tech Academy Landing Page</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>High Tech Academy Landing Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -23,224 +29,304 @@
                     fontFamily: {
                         "display": ["Inter"]
                     },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-<style>
+    <style>
         .netflix-gradient {
             background: linear-gradient(to top, #141414 0%, rgba(20, 20, 20, 0) 50%, rgba(20, 20, 20, 0.7) 100%);
         }
+
         .hero-overlay {
-            background: linear-gradient(77deg, rgba(0,0,0,.6) 0, rgba(0,0,0,0) 85%);
+            background: linear-gradient(77deg, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, 0) 85%);
         }
+
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-netflix-black font-display text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white">
-<!-- Top Navigation -->
-<header class="fixed top-0 z-50 w-full transition-colors duration-300 bg-gradient-to-b from-black/80 to-transparent">
-<div class="max-w-[1440px] mx-auto px-4 md:px-12 py-4 flex items-center justify-between">
-<div class="flex items-center gap-10">
-<div class="flex items-center gap-2">
-<span class="text-primary text-4xl font-black tracking-tighter">H</span>
-<h2 class="hidden md:block text-primary text-xl font-bold uppercase tracking-widest">High Tech Academy</h2>
-</div>
-<nav class="hidden lg:flex items-center gap-6">
-<a class="text-sm font-medium hover:text-slate-300 transition-colors" href="#">Home</a>
-<a class="text-sm font-light hover:text-slate-300 transition-colors" href="#">Facilities</a>
-<a class="text-sm font-light hover:text-slate-300 transition-colors" href="#">Classes</a>
-<a class="text-sm font-light hover:text-slate-300 transition-colors" href="#">Gallery</a>
-<a class="text-sm font-light hover:text-slate-300 transition-colors" href="#">Contact</a>
-</nav>
-</div>
-<div class="flex items-center gap-5">
-<button class="material-symbols-outlined text-2xl cursor-pointer hover:text-slate-300">search</button>
-<button class="material-symbols-outlined text-2xl cursor-pointer hover:text-slate-300">notifications</button>
-<div class="w-8 h-8 rounded bg-primary flex items-center justify-center overflow-hidden cursor-pointer">
-<img class="w-full h-full object-cover" data-alt="User profile avatar icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_218Vd_hVQjEDXMEf53YOeNiYMR3fhNFjlOVPk3SXZwPot9m6PmiiC67WPM6J2I04b9YY0xZE3Vzk0e3oTKxMgX-BLUwlubPuiLp9Pu-GwdDEw3zidBcakhHHVfR4g5rVFLkRjGuYbPuwcqZwvuqvFYhwbxTgGWDO_mrxpQMrOyAp1otlgYWr9xG1NrhesgNmLXG40aug8tUV31KAcRIqPezQqVvYui-ifuJZTKjBqVpdH-FCNuMtVnt9UaWYXuadWbFhPnlHDEs"/>
-</div>
-<span class="material-symbols-outlined text-sm hidden sm:block">arrow_drop_down</span>
-</div>
-</div>
-</header>
-<!-- Hero Billboard Section -->
-<section class="relative h-[85vh] md:h-[95vh] w-full overflow-hidden bg-netflix-black">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-cover bg-center" data-alt="Cinematic high school building exterior view" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATrvv3Vw0mdnEVnuYmWkPdc7d3Fc7EmVD6QP-MEH6F8m18G84XssZg3MoSU-nhfyq0fDZQbpVkD0z9meE0QQsfeVcpJ4eAeQKFp_Lkh-u2pMFqjkM29OeQB7HqU_fr1LjoZDLhqgW6CJI91zL5bkD-inKLYYhQVI8BExd95tOKY1TAOgsAv4k6CRtxc4TOpymuYi0i27Gw50484eTk_T5-0Jnl3SqQ5gL2z4otEopaoalveP3V-cq72ycKowO3Ernv-oGRp40h8f8');"></div>
-<div class="absolute inset-0 hero-overlay"></div>
-<div class="absolute inset-0 netflix-gradient"></div>
-</div>
-<div class="relative z-10 flex flex-col justify-end h-full max-w-[1440px] mx-auto px-4 md:px-12 pb-24 md:pb-32">
-<div class="max-w-2xl space-y-6">
-<h1 class="text-4xl md:text-7xl font-black leading-[1.1] tracking-tight text-white uppercase italic">
-                    High Tech Academy <br/> <span class="text-primary">High School</span>
-</h1>
-<p class="text-lg md:text-xl text-slate-100 font-medium drop-shadow-lg max-w-xl">
-                    Best English Medium School in Teonthar, Rewa. <br/>
+
+<body
+    class="bg-background-light dark:bg-netflix-black font-display text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white">
+    <!-- Top Navigation -->
+    <header
+        class="fixed top-0 z-50 w-full transition-colors duration-300 bg-gradient-to-b from-black/80 to-transparent">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-12 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-2">
+                    <span class="text-primary text-4xl font-black tracking-tighter">H</span>
+                    <h2 class="hidden md:block text-primary text-xl font-bold uppercase tracking-widest">High Tech
+                        Academy</h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-medium hover:text-slate-300 transition-colors" href="#home">Home</a>
+                    <a class="text-sm font-light hover:text-slate-300 transition-colors"
+                        href="#facilities">Facilities</a>
+                    <a class="text-sm font-light hover:text-slate-300 transition-colors" href="#classes">Classes</a>
+                    <a class="text-sm font-light hover:text-slate-300 transition-colors" href="#about">About</a>
+                    <a class="text-sm font-light hover:text-slate-300 transition-colors" href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-5">
+                <button class="material-symbols-outlined text-2xl cursor-pointer hover:text-slate-300"
+                    onclick="alert('Search functionality coming soon!')">search</button>
+                <button class="material-symbols-outlined text-2xl cursor-pointer hover:text-slate-300"
+                    onclick="alert('Notifications coming soon!')">notifications</button>
+                <div class="w-8 h-8 rounded bg-primary flex items-center justify-center overflow-hidden cursor-pointer">
+                    <img class="w-full h-full object-cover" data-alt="User profile avatar icon"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_218Vd_hVQjEDXMEf53YOeNiYMR3fhNFjlOVPk3SXZwPot9m6PmiiC67WPM6J2I04b9YY0xZE3Vzk0e3oTKxMgX-BLUwlubPuiLp9Pu-GwdDEw3zidBcakhHHVfR4g5rVFLkRjGuYbPuwcqZwvuqvFYhwbxTgGWDO_mrxpQMrOyAp1otlgYWr9xG1NrhesgNmLXG40aug8tUV31KAcRIqPezQqVvYui-ifuJZTKjBqVpdH-FCNuMtVnt9UaWYXuadWbFhPnlHDEs" />
+                </div>
+                <span class="material-symbols-outlined text-sm hidden sm:block">arrow_drop_down</span>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Billboard Section -->
+    <section id="home" class="relative h-[85vh] md:h-[95vh] w-full overflow-hidden bg-netflix-black">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center" data-alt="Cinematic high school building exterior view"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATrvv3Vw0mdnEVnuYmWkPdc7d3Fc7EmVD6QP-MEH6F8m18G84XssZg3MoSU-nhfyq0fDZQbpVkD0z9meE0QQsfeVcpJ4eAeQKFp_Lkh-u2pMFqjkM29OeQB7HqU_fr1LjoZDLhqgW6CJI91zL5bkD-inKLYYhQVI8BExd95tOKY1TAOgsAv4k6CRtxc4TOpymuYi0i27Gw50484eTk_T5-0Jnl3SqQ5gL2z4otEopaoalveP3V-cq72ycKowO3Ernv-oGRp40h8f8');">
+            </div>
+            <div class="absolute inset-0 hero-overlay"></div>
+            <div class="absolute inset-0 netflix-gradient"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-end h-full max-w-[1440px] mx-auto px-4 md:px-12 pb-24 md:pb-32">
+            <div class="max-w-2xl space-y-6">
+                <h1 class="text-4xl md:text-7xl font-black leading-[1.1] tracking-tight text-white uppercase italic">
+                    High Tech Academy <br /> <span class="text-primary">High School</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-100 font-medium drop-shadow-lg max-w-xl">
+                    Best English Medium School in Teonthar, Rewa. <br />
                     Empowering minds from Nursery to 10th grade.
                 </p>
-<div class="flex items-center gap-3 pt-4">
-<button class="flex items-center gap-2 bg-white text-black px-6 md:px-8 py-3 rounded-lg font-bold text-lg hover:bg-white/90 transition-all">
-<span class="material-symbols-outlined fill-1">play_arrow</span>
+                <div class="flex items-center gap-3 pt-4">
+                    <button onclick="alert('Redirecting to Application Portal...')"
+                        class="flex items-center gap-2 bg-white text-black px-6 md:px-8 py-3 rounded-lg font-bold text-lg hover:bg-white/90 transition-all">
+                        <span class="material-symbols-outlined fill-1">play_arrow</span>
                         Apply Now
                     </button>
-<button class="flex items-center gap-2 bg-netflix-gray/70 text-white px-6 md:px-8 py-3 rounded-lg font-bold text-lg hover:bg-netflix-gray/50 transition-all backdrop-blur-md">
-<span class="material-symbols-outlined">info</span>
+                    <a href="#about"
+                        class="flex items-center gap-2 bg-netflix-gray/70 text-white px-6 md:px-8 py-3 rounded-lg font-bold text-lg hover:bg-netflix-gray/50 transition-all backdrop-blur-md">
+                        <span class="material-symbols-outlined">info</span>
                         More Info
-                    </button>
-</div>
-</div>
-</div>
-</section>
-<main class="relative z-20 -mt-16 md:-mt-24 space-y-12 pb-20">
-<!-- Row 1: Facilities -->
-<section class="pl-4 md:pl-12">
-<h2 class="text-xl md:text-2xl font-bold mb-4 px-2">Facilities</h2>
-<div class="flex gap-2 overflow-x-auto hide-scrollbar pb-8 group">
-<div class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
-<img class="w-full h-full object-cover" data-alt="Modern computer lab with rows of PCs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHYJRdJ8CBS8xwxxt90T1kg_CEMtVv6h3tZYIgsDC4UUfrDRnwo68U-HISE-kPETh8pP-eqCIfAAQtFyW-IWToSwL7JS7CeWUrDI_yCz3EoKipJQQ-oohBG3Hdcx1E07xZ2IgMnCCISRzvjGJBwOReGHt6cePYPFHk8SWevraizgGOPNKdK8Vxo1tE0R_FFUgeimluqIcm6Fy3RlCuNgAo7BLYakFNo0Ol2tAJyuFWO-eMi-hQghvsiz8E_h7VbePCOX0flDo_H30"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
-<span class="text-sm font-semibold">Computer Lab</span>
-</div>
-</div>
-<div class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
-<img class="w-full h-full object-cover" data-alt="Spacious sports playground with green grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJRslvzYjic4ycjSjjfU20g_-zkzc3tVB7hak9QrQKswzfwMNjEKthfBIqhk111fC1FbLmPbGJrA1n5S6J1e1jl5nH1UXU-ezq1LQeFoTLDunyb-Z-VDMsi19jfROAaxY6rHN2LTKMsVFIWUnsYqjxaCVMhNPNYs1xDPlegYaB8MYk8R3ZJ9YAq5bs9M1kwGP9JCCFOmHlS9mgdtSBywzoIuek5AOcyGPQZpb7q9T0dBl6Ir29E-bo14_H6_EojQG-eSBkI5CWJBM"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
-<span class="text-sm font-semibold">Sports Ground</span>
-</div>
-</div>
-<div class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
-<img class="w-full h-full object-cover" data-alt="Interactive classroom with digital whiteboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkhm8adu5CQyEJLYDU_2p-dCmw4UtbRedoHcuMWWlLG2D3EEHDGwjw9wHRflyaD7sEb-A6UxgwT1ZkaUpKRHACEBvJpEln3Z9dGUmxwB7ttZQ0w6nOqoC6Z68nrJ05yPkHPvu_5hxkKOu25F0mMuL-KxEq5cHB3zxrWZVUHA2op3spz2eyhYVTGaLjVRGXWGT-VaKjoBiEMdCJ7m1MI94EDnKhp22Ztbebu_UdekhKEeBDzYRb0yXFoNtyMJJUdwFAG90jVqXpFuI"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
-<span class="text-sm font-semibold">Modern Classrooms</span>
-</div>
-</div>
-<div class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
-<img class="w-full h-full object-cover" data-alt="School bus fleet for student transportation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoNt06iTvnrOqmY8FD3pG9ubOuGu6U9noLXzg6NhllDIs8PlLwi92wQZESjgAT8JE6_tlWxekW7ECXtjKLJDGmwO-TfUdKVuV5TYGVgjOZfHR6s05Kp_ukVKB_W2dYqvSGzYJnXpd9JPRUwSW1XxM3o8J6eIod5mUTw5ePH9trzHsGEMjcznJgknkqZFuBFoqKgCpqy3aevm3Zubnf_EPDOhIzodJg3eu2r87RBr32Tbcyrdn6cKcUY0CoFpy5l_fl6QeNOzD3BD8"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
-<span class="text-sm font-semibold">Transportation</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Row 2: Trending Classes -->
-<section class="pl-4 md:pl-12">
-<h2 class="text-xl md:text-2xl font-bold mb-4 px-2">Trending Classes</h2>
-<div class="flex gap-2 overflow-x-auto hide-scrollbar pb-8">
-<div class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
-<img class="w-full h-full object-cover" data-alt="Nursery student learning activities poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZMM47Y1xUjQ532n34Zk6JC0TmZGASu090Fjojh2B0TEoJbW7fp_5iVXWkJtUeBs4njGw6_xfY4kPdoLcTOZRM5jpb_X43ibBKrz0q5H4zRNvF2sbpA8HQ0Oz_wT0dEitRHiKJQc59gqEHO4Zav3F0MvThvd3DSZDQAUdCjiaeYsiK6vrd9-ejMLApC_FXtuLKBsuvM2trMmzkKejuGnQl-RbF3cU0zgNLqWmEKA9GHQb0B4VTJLVV4fmSRhHsztvA7VKttUqOO5c"/>
-<div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
-<div class="absolute bottom-4 left-4">
-<span class="text-lg font-black italic text-primary drop-shadow-lg">NURSERY</span>
-</div>
-</div>
-<div class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
-<img class="w-full h-full object-cover" data-alt="Primary school students studying in classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKUhQmNAli4-nTyq-QATR6ii04AyAARNIlJku2LWQycgyzGntRHjg9KOCY7B6gQbbBwbRZdx0O3jQ0q7L00jXYcgf37sNg_NA6DV0cGNUMd9adZ7kTFQpwAGlOA8o6tpHjx0nDg8F_U7mVmt1Ex-Xd_lFOZ4kVD4R3JpDcqWb7mRBMKtYGHQHa8nbZgqw9hsUTQC7K5XJSGLonaJRdHIOEvJ1iNbXl9fovk9QxgxXSmsxKtKu8vAI2zHh3ZWG81StvJrSpHypJNGc"/>
-<div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
-<div class="absolute bottom-4 left-4">
-<span class="text-lg font-black italic text-primary drop-shadow-lg">PRIMARY (1-5)</span>
-</div>
-</div>
-<div class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
-<img class="w-full h-full object-cover" data-alt="Middle school students doing science experiment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBMhU47UWGTGJBer7k_GANTY85vKowGCYQyToyVPwywldwRPfLaZpMqFXzACz9TMEmno8jBRkh-_IPtBioGX79ezge8oZrYPjiIvqHLy9NMuvxpTDJHoyoPY2Ll2MM6KkNlQdXvaHdQkCJ1D91yQmn9RIK9WAjjcXkCAzcdAYIf7o_Y2UjPK_HyUisa5q0L0IVmEDMuCQrSGCv9_TlFoFubo43ZGJboFwiCgiZwjVoZrN3wTk2NpJa6TYqqOc54kQJ26O_lLjUVPI"/>
-<div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
-<div class="absolute bottom-4 left-4">
-<span class="text-lg font-black italic text-primary drop-shadow-lg">MIDDLE (6-8)</span>
-</div>
-</div>
-<div class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
-<img class="w-full h-full object-cover" data-alt="Secondary students in advanced laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2pxH3qluntag3Ffu9afOvGIrCf-oZxMAocm_tCIuCHxFiSRDmGDGF0WvBm7a1kHjJ7YtUKE6mDuOQGV5jO7HawO4FI-4Wp5_bsoCDVXnMchcrC20UScSFvd9smOEFes3reD8sQW6DIyKmBbYHJdod1kaDye0-Ql2-ZWcaaauU-WKyhDp4IY7U5KTsQGatQ20JiyoCPbMwYtq0FlHr_ROvQY2ClyO1l_VkSokz-lhbqinCtMfiCv1XSYM80J3UyY4HZPOXi8KOIHc"/>
-<div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
-<div class="absolute bottom-4 left-4">
-<span class="text-lg font-black italic text-primary drop-shadow-lg">SECONDARY (9-10)</span>
-</div>
-</div>
-</div>
-</section>
-<!-- About Us: Content Detail Style -->
-<section class="max-w-[1440px] mx-auto px-4 md:px-12 py-12">
-<div class="grid md:grid-cols-2 gap-12 items-center bg-netflix-gray/20 rounded-2xl p-8 md:p-12 border border-white/5 backdrop-blur-sm">
-<div class="space-y-6">
-<h2 class="text-3xl md:text-5xl font-bold">About the Academy</h2>
-<div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
-<span class="text-green-500">Match: 100% English Medium</span>
-<span class="text-slate-400">Est. 2010</span>
-<span class="px-1 border border-slate-500 text-slate-400 text-[10px] rounded-sm">10th</span>
-<span class="text-slate-400">Seasons: Nursery to 10th</span>
-<span class="material-symbols-outlined text-xs">hd</span>
-</div>
-<p class="text-slate-300 text-lg leading-relaxed">
-                        High Tech Academy is dedicated to providing excellence in education through modern technology and innovative teaching methods. Located in the heart of Teonthar, we focus on holistic development, character building, and academic mastery.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="relative z-20 -mt-16 md:-mt-24 space-y-12 pb-20">
+        <!-- Row 1: Facilities -->
+        <section id="facilities" class="pl-4 md:pl-12 pt-16">
+            <h2 class="text-xl md:text-2xl font-bold mb-4 px-2">Facilities</h2>
+            <div class="flex gap-2 overflow-x-auto hide-scrollbar pb-8 group">
+                <div
+                    class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
+                    <img class="w-full h-full object-cover" data-alt="Modern computer lab with rows of PCs"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHYJRdJ8CBS8xwxxt90T1kg_CEMtVv6h3tZYIgsDC4UUfrDRnwo68U-HISE-kPETh8pP-eqCIfAAQtFyW-IWToSwL7JS7CeWUrDI_yCz3EoKipJQQ-oohBG3Hdcx1E07xZ2IgMnCCISRzvjGJBwOReGHt6cePYPFHk8SWevraizgGOPNKdK8Vxo1tE0R_FFUgeimluqIcm6Fy3RlCuNgAo7BLYakFNo0Ol2tAJyuFWO-eMi-hQghvsiz8E_h7VbePCOX0flDo_H30" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="text-sm font-semibold">Computer Lab</span>
+                    </div>
+                </div>
+                <div
+                    class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
+                    <img class="w-full h-full object-cover" data-alt="Spacious sports playground with green grass"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJRslvzYjic4ycjSjjfU20g_-zkzc3tVB7hak9QrQKswzfwMNjEKthfBIqhk111fC1FbLmPbGJrA1n5S6J1e1jl5nH1UXU-ezq1LQeFoTLDunyb-Z-VDMsi19jfROAaxY6rHN2LTKMsVFIWUnsYqjxaCVMhNPNYs1xDPlegYaB8MYk8R3ZJ9YAq5bs9M1kwGP9JCCFOmHlS9mgdtSBywzoIuek5AOcyGPQZpb7q9T0dBl6Ir29E-bo14_H6_EojQG-eSBkI5CWJBM" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="text-sm font-semibold">Sports Ground</span>
+                    </div>
+                </div>
+                <div
+                    class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
+                    <img class="w-full h-full object-cover" data-alt="Interactive classroom with digital whiteboard"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkhm8adu5CQyEJLYDU_2p-dCmw4UtbRedoHcuMWWlLG2D3EEHDGwjw9wHRflyaD7sEb-A6UxgwT1ZkaUpKRHACEBvJpEln3Z9dGUmxwB7ttZQ0w6nOqoC6Z68nrJ05yPkHPvu_5hxkKOu25F0mMuL-KxEq5cHB3zxrWZVUHA2op3spz2eyhYVTGaLjVRGXWGT-VaKjoBiEMdCJ7m1MI94EDnKhp22Ztbebu_UdekhKEeBDzYRb0yXFoNtyMJJUdwFAG90jVqXpFuI" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="text-sm font-semibold">Modern Classrooms</span>
+                    </div>
+                </div>
+                <div
+                    class="flex-none w-[280px] md:w-[350px] aspect-video relative rounded-lg overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-300 z-10 hover:z-20 hover:ring-2 hover:ring-primary">
+                    <img class="w-full h-full object-cover" data-alt="School bus fleet for student transportation"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoNt06iTvnrOqmY8FD3pG9ubOuGu6U9noLXzg6NhllDIs8PlLwi92wQZESjgAT8JE6_tlWxekW7ECXtjKLJDGmwO-TfUdKVuV5TYGVgjOZfHR6s05Kp_ukVKB_W2dYqvSGzYJnXpd9JPRUwSW1XxM3o8J6eIod5mUTw5ePH9trzHsGEMjcznJgknkqZFuBFoqKgCpqy3aevm3Zubnf_EPDOhIzodJg3eu2r87RBr32Tbcyrdn6cKcUY0CoFpy5l_fl6QeNOzD3BD8" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                        <span class="text-sm font-semibold">Transportation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Row 2: Trending Classes -->
+        <section id="classes" class="pl-4 md:pl-12 pt-12">
+            <h2 class="text-xl md:text-2xl font-bold mb-4 px-2">Trending Classes</h2>
+            <div class="flex gap-2 overflow-x-auto hide-scrollbar pb-8">
+                <div
+                    class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
+                    <img class="w-full h-full object-cover" data-alt="Nursery student learning activities poster"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZMM47Y1xUjQ532n34Zk6JC0TmZGASu090Fjojh2B0TEoJbW7fp_5iVXWkJtUeBs4njGw6_xfY4kPdoLcTOZRM5jpb_X43ibBKrz0q5H4zRNvF2sbpA8HQ0Oz_wT0dEitRHiKJQc59gqEHO4Zav3F0MvThvd3DSZDQAUdCjiaeYsiK6vrd9-ejMLApC_FXtuLKBsuvM2trMmzkKejuGnQl-RbF3cU0zgNLqWmEKA9GHQb0B4VTJLVV4fmSRhHsztvA7VKttUqOO5c" />
+                    <div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="text-lg font-black italic text-primary drop-shadow-lg">NURSERY</span>
+                    </div>
+                </div>
+                <div
+                    class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
+                    <img class="w-full h-full object-cover" data-alt="Primary school students studying in classroom"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKUhQmNAli4-nTyq-QATR6ii04AyAARNIlJku2LWQycgyzGntRHjg9KOCY7B6gQbbBwbRZdx0O3jQ0q7L00jXYcgf37sNg_NA6DV0cGNUMd9adZ7kTFQpwAGlOA8o6tpHjx0nDg8F_U7mVmt1Ex-Xd_lFOZ4kVD4R3JpDcqWb7mRBMKtYGHQHa8nbZgqw9hsUTQC7K5XJSGLonaJRdHIOEvJ1iNbXl9fovk9QxgxXSmsxKtKu8vAI2zHh3ZWG81StvJrSpHypJNGc" />
+                    <div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="text-lg font-black italic text-primary drop-shadow-lg">PRIMARY (1-5)</span>
+                    </div>
+                </div>
+                <div
+                    class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
+                    <img class="w-full h-full object-cover" data-alt="Middle school students doing science experiment"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBMhU47UWGTGJBer7k_GANTY85vKowGCYQyToyVPwywldwRPfLaZpMqFXzACz9TMEmno8jBRkh-_IPtBioGX79ezge8oZrYPjiIvqHLy9NMuvxpTDJHoyoPY2Ll2MM6KkNlQdXvaHdQkCJ1D91yQmn9RIK9WAjjcXkCAzcdAYIf7o_Y2UjPK_HyUisa5q0L0IVmEDMuCQrSGCv9_TlFoFubo43ZGJboFwiCgiZwjVoZrN3wTk2NpJa6TYqqOc54kQJ26O_lLjUVPI" />
+                    <div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="text-lg font-black italic text-primary drop-shadow-lg">MIDDLE (6-8)</span>
+                    </div>
+                </div>
+                <div
+                    class="flex-none w-[180px] md:w-[220px] aspect-[2/3] relative rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300 bg-netflix-gray">
+                    <img class="w-full h-full object-cover" data-alt="Secondary students in advanced laboratory"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2pxH3qluntag3Ffu9afOvGIrCf-oZxMAocm_tCIuCHxFiSRDmGDGF0WvBm7a1kHjJ7YtUKE6mDuOQGV5jO7HawO4FI-4Wp5_bsoCDVXnMchcrC20UScSFvd9smOEFes3reD8sQW6DIyKmBbYHJdod1kaDye0-Ql2-ZWcaaauU-WKyhDp4IY7U5KTsQGatQ20JiyoCPbMwYtq0FlHr_ROvQY2ClyO1l_VkSokz-lhbqinCtMfiCv1XSYM80J3UyY4HZPOXi8KOIHc" />
+                    <div class="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="text-lg font-black italic text-primary drop-shadow-lg">SECONDARY (9-10)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us: Content Detail Style -->
+        <section id="about" class="max-w-[1440px] mx-auto px-4 md:px-12 py-20">
+            <div
+                class="grid md:grid-cols-2 gap-12 items-center bg-netflix-gray/20 rounded-2xl p-8 md:p-12 border border-white/5 backdrop-blur-sm">
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-5xl font-bold">About the Academy</h2>
+                    <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
+                        <span class="text-green-500">Match: 100% English Medium</span>
+                        <span class="text-slate-400">Est. 2010</span>
+                        <span class="px-1 border border-slate-500 text-slate-400 text-[10px] rounded-sm">10th</span>
+                        <span class="text-slate-400">Seasons: Nursery to 10th</span>
+                        <span class="material-symbols-outlined text-xs">hd</span>
+                    </div>
+                    <p class="text-slate-300 text-lg leading-relaxed">
+                        High Tech Academy is dedicated to providing excellence in education through modern technology
+                        and innovative teaching methods. Located in the heart of Teonthar, we focus on holistic
+                        development, character building, and academic mastery.
                     </p>
-<div class="space-y-2 pt-2">
-<p class="text-sm"><span class="text-slate-500">Genres:</span> Education, Leadership, Growth</p>
-<p class="text-sm"><span class="text-slate-500">Core Values:</span> Integrity, Innovation, Excellence</p>
-</div>
-</div>
-<div class="relative rounded-xl overflow-hidden aspect-video shadow-2xl shadow-primary/10">
-<img class="w-full h-full object-cover" data-alt="Happy students walking in academy hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzOL4P02hKNXx8rrb2UaO-DfOiGa7Ya1c3AxWsiiFw17YB4WKmPoxosOOliAzce1_JLG4ToIR6sKNNZ86F_phiO7XFnz2j_1QqDtgmYcz8APgcQcL-YIXi_8lF9Djm7iDJ2gtoy_B0t7YzAHAT8xvuTKEnm3VvTC-GZJzeCvkSzlnJ2zAFJtNb2UWn3du49iR6tM3QrOOOaWS_Xp-iy_Iuoqx1xw6H_zn3ZwXOvnUr-b3jMKDcHzyU37gpq3G4YLi95NETxm_6Wto"/>
-<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-netflix-black pt-16 pb-8 border-t border-white/5">
-<div class="max-w-[1440px] mx-auto px-4 md:px-12">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-<div class="space-y-4">
-<h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Contact Us</h4>
-<ul class="space-y-2 text-sm text-slate-400">
-<li>Baikunthdham, Kakaraha</li>
-<li>Teonthar, Rewa (M.P.)</li>
-<li>+91 98765 43210</li>
-<li>+91 87654 32109</li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Navigation</h4>
-<ul class="space-y-2 text-sm text-slate-400">
-<li><a class="hover:underline" href="#">Home</a></li>
-<li><a class="hover:underline" href="#">Facilities</a></li>
-<li><a class="hover:underline" href="#">Classes</a></li>
-<li><a class="hover:underline" href="#">Gallery</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Help Center</h4>
-<ul class="space-y-2 text-sm text-slate-400">
-<li><a class="hover:underline" href="#">Admission FAQ</a></li>
-<li><a class="hover:underline" href="#">Privacy Policy</a></li>
-<li><a class="hover:underline" href="#">Terms of Use</a></li>
-<li><a class="hover:underline" href="#">Corporate Info</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Social</h4>
-<div class="flex gap-4">
-<a class="text-slate-400 hover:text-white transition-colors" href="#">
-<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
-</a>
-<a class="text-slate-400 hover:text-white transition-colors" href="#">
-<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
-</a>
-<a class="text-slate-400 hover:text-white transition-colors" href="#">
-<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.949-.2-4.358-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
-</a>
-</div>
-</div>
-</div>
-<div class="pt-8 border-t border-white/10 text-center">
-<p class="text-xs text-slate-500">© 2024 High Tech Academy. All rights reserved. Professional Educational Excellence.</p>
-</div>
-</div>
-</footer>
-</body></html>
+                    <div class="space-y-2 pt-2">
+                        <p class="text-sm"><span class="text-slate-500">Genres:</span> Education, Leadership, Growth</p>
+                        <p class="text-sm"><span class="text-slate-500">Core Values:</span> Integrity, Innovation,
+                            Excellence</p>
+                    </div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden aspect-video shadow-2xl shadow-primary/10">
+                    <img class="w-full h-full object-cover" data-alt="Happy students walking in academy hallway"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzOL4P02hKNXx8rrb2UaO-DfOiGa7Ya1c3AxWsiiFw17YB4WKmPoxosOOliAzce1_JLG4ToIR6sKNNZ86F_phiO7XFnz2j_1QqDtgmYcz8APgcQcL-YIXi_8lF9Djm7iDJ2gtoy_B0t7YzAHAT8xvuTKEnm3VvTC-GZJzeCvkSzlnJ2zAFJtNb2UWn3du49iR6tM3QrOOOaWS_Xp-iy_Iuoqx1xw6H_zn3ZwXOvnUr-b3jMKDcHzyU37gpq3G4YLi95NETxm_6Wto" />
+                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="bg-netflix-black pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4">
+                    <h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Contact Us</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>Baikunthdham, Kakaraha</li>
+                        <li>Teonthar, Rewa (M.P.)</li>
+                        <li>+91 98765 43210</li>
+                        <li>+91 87654 32109</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Navigation</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a class="hover:underline" href="#home">Home</a></li>
+                        <li><a class="hover:underline" href="#facilities">Facilities</a></li>
+                        <li><a class="hover:underline" href="#classes">Classes</a></li>
+                        <li><a class="hover:underline" href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Help Center</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a class="hover:underline" href="#">Admission FAQ</a></li>
+                        <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+                        <li><a class="hover:underline" href="#">Terms of Use</a></li>
+                        <li><a class="hover:underline" href="#">Corporate Info</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-slate-500 font-bold uppercase text-xs tracking-wider">Social</h4>
+                    <div class="flex gap-4">
+                        <a class="text-slate-400 hover:text-white transition-colors" href="#">
+                            <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-slate-400 hover:text-white transition-colors" href="#">
+                            <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-slate-400 hover:text-white transition-colors" href="#">
+                            <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.949-.2-4.358-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center">
+                <p class="text-xs text-slate-500">© 2024 High Tech Academy. All rights reserved. Professional
+                    Educational Excellence.</p>
+            </div>
+    </footer>
+
+    <script>
+        // Sticky Header Scroll Effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.remove('bg-gradient-to-b', 'from-black/80', 'to-transparent');
+                header.classList.add('bg-netflix-black', 'shadow-lg');
+            } else {
+                header.classList.add('bg-gradient-to-b', 'from-black/80', 'to-transparent');
+                header.classList.remove('bg-netflix-black', 'shadow-lg');
+            }
+        });
+
+        // Smooth Scrolling for Nav Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
