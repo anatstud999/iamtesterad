@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>High Tech Academy - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e60a15",
+                        "background-light": "#f8f5f6",
+                        "background-dark": "#000000",
+                        "surface-dark": "#141414",
+                        "input-dark": "#333333",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .netflix-gradient {
+            background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%);
+        }
+
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .input-focus-ring:focus {
+            box-shadow: 0 0 0 2px rgba(230, 10, 21, 0.5);
+            border-color: #e60a15 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-background-dark border-b border-white/10">
+        <div class="flex items-center gap-10">
+            <div class="flex items-center gap-2 text-primary">
+                <span class="text-4xl font-black tracking-tighter">H</span>
+                <h1 class="hidden md:block text-xl font-bold text-slate-100 tracking-tight">HIGH TECH ACADEMY</h1>
+            </div>
+            <nav class="hidden lg:flex items-center gap-6">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors"
+                    href="index.html#facilities">Facilities</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors"
+                    href="index.html#classes">Classes</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="features.html">Features</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+                <a class="text-sm font-bold text-primary" href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="relative hidden sm:block">
+                <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+                <input
+                    class="bg-input-dark border-none rounded-lg pl-10 pr-4 py-2 text-sm w-64 focus:ring-1 focus:ring-primary"
+                    placeholder="Search" type="text" />
+            </div>
+            <button class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <div class="w-8 h-8 rounded bg-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-lg">person</span>
+                </div>
+            </button>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Hero Header -->
+        <section
+            class="relative rounded-xl overflow-hidden mb-12 h-64 md:h-80 flex flex-col justify-end p-8 bg-surface-dark group"
+            data-alt="Cinematic wide shot of a high tech modern classroom"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpydxJxqJY3cHuhxRU6Ezj_C-rtvKpYd7a-qqWnPW-q-nvPiMSTpR3SGh-Q95D7cIqBytAUtn2gNG2TMJmBWWrWhPQvs4eMLXYdRWnH0dcq-q2gK0zf4Z0sNNwIryTRshUxr9ec8_1LI0QnF6QDdnRc2wmfpr_oqSIyK99EvuAneNSx99x66crfsZ_F_uvHQf5dbGnQ9hBQ1bYE8aguXuLTsB0BTz6yz61hTKTVuF9d242keRZfV5JWc7t4JGERk5chImZdmXWtsA'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 netflix-gradient"></div>
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-6xl font-black tracking-tighter text-white mb-2 uppercase">Contact Us — Join
+                    the Cast</h1>
+                <p class="text-slate-300 text-lg max-w-2xl">Start your leading role in the future of technology and
+                    innovation.</p>
+            </div>
+        </section>
+        <!-- Main Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Left Column: Production Inquiry Form -->
+            <div class="glass-panel p-8 rounded-xl shadow-2xl">
+                <div class="flex items-center gap-3 mb-8">
+                    <span class="w-2 h-8 bg-primary rounded-full"></span>
+                    <h2 class="text-2xl font-bold tracking-tight uppercase">Production Inquiry</h2>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-400 uppercase tracking-widest">Full Name</label>
+                            <input
+                                class="w-full bg-input-dark border border-white/10 rounded-lg p-4 text-white input-focus-ring outline-none transition-all"
+                                placeholder="John Doe" type="text" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-400 uppercase tracking-widest">Email
+                                Address</label>
+                            <input
+                                class="w-full bg-input-dark border border-white/10 rounded-lg p-4 text-white input-focus-ring outline-none transition-all"
+                                placeholder="john@example.com" type="email" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold text-slate-400 uppercase tracking-widest">Subject</label>
+                        <input
+                            class="w-full bg-input-dark border border-white/10 rounded-lg p-4 text-white input-focus-ring outline-none transition-all"
+                            placeholder="Enrollment / General Inquiry" type="text" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold text-slate-400 uppercase tracking-widest">Message</label>
+                        <textarea
+                            class="w-full bg-input-dark border border-white/10 rounded-lg p-4 text-white input-focus-ring outline-none transition-all resize-none"
+                            placeholder="How can we help you?" rows="5"></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg uppercase tracking-widest transition-all transform active:scale-[0.98] shadow-lg shadow-primary/20"
+                        type="button">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            <!-- Right Column: Studio Details -->
+            <div class="space-y-8">
+                <div class="glass-panel p-8 rounded-xl shadow-2xl border-l-4 border-l-primary">
+                    <h2 class="text-2xl font-bold tracking-tight uppercase mb-8">Studio Details</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary">location_on</span>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-primary uppercase tracking-widest mb-1">Production HQ
+                                </h3>
+                                <p class="text-slate-300">Baikunthdham, Kakaraha,<br />Teonthar, Madhya Pradesh</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary">call</span>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-primary uppercase tracking-widest mb-1">Direct Line
+                                </h3>
+                                <p class="text-slate-300 font-display text-xl">+91 7722831001</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-primary uppercase tracking-widest mb-1">Official
+                                    Correspondence</h3>
+                                <p class="text-slate-300">admissions@hightechacademy.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map Placeholder -->
+                <div class="relative h-64 rounded-xl overflow-hidden border border-white/10 group shadow-2xl"
+                    data-alt="Abstract dark stylized map of Teonthar region" data-location="Teonthar"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAB5MCRbv1cnWq8KJX69wgw9_qNfUrEan5RpIzNg40WASc0ckDNCk3YvECjCHEQ2f7qzJ76Qx6B92-_STxBgPjXFuPTkDLDyLzjKjHasNOC4sbB7GWRAa1TLMomeeU2mxPNxmwLkXWS-Ohtrft42We4Y3XnFR4RoIOGDJ-iGcuyBZtEjltEVEAFHAF0BG7IYayWoP1CmOjtIoH6uU5yN7opkXRCLBLw-PDd2ZlvbhGY2zRYV2nGtz1aushtoP-c4-W3y1JekXo3P2E'); background-size: cover; background-position: center;">
+                    <div class="absolute inset-0 bg-background-dark/40 flex items-center justify-center">
+                        <div class="flex flex-col items-center">
+                            <span
+                                class="material-symbols-outlined text-primary text-5xl animate-bounce">location_on</span>
+                            <div
+                                class="bg-background-dark/90 px-4 py-2 rounded-full border border-primary/50 text-xs font-bold uppercase tracking-widest text-white mt-2">
+                                High Tech Academy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="mt-20 border-t border-white/10 bg-background-dark pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 text-primary mb-6">
+                        <span class="text-4xl font-black tracking-tighter">H</span>
+                        <h2 class="text-xl font-bold text-slate-100 uppercase tracking-tight">High Tech Academy</h2>
+                    </div>
+                    <p class="text-slate-400 max-w-sm">Leading the next generation of digital pioneers and technical
+                        innovators through a cinematic learning experience.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold uppercase tracking-widest mb-6">Explore</h3>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Curriculum</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Campus Tour</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Alumni Success</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold uppercase tracking-widest mb-6">Follow Us</h3>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-primary hover:text-primary transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">share</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-primary hover:text-primary transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-primary hover:text-primary transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">play_circle</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+                <p>© 2024 High Tech Academy. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

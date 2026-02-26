@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e60a15",
+                        "background-light": "#f8f5f6",
+                        "background-dark": "#0a0505",
+                        "surface-dark": "#141414",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <title>High Tech Academy - Gallery</title>
+</head>
+
+<body class="bg-background-dark text-slate-100 font-display selection:bg-primary selection:text-white">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header
+            class="fixed top-0 z-50 w-full flex items-center justify-between px-6 py-4 bg-gradient-to-b from-background-dark to-transparent backdrop-blur-sm border-b border-white/5">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-2 text-primary">
+                    <div
+                        class="size-8 flex items-center justify-center bg-primary rounded text-white font-bold text-xl">
+                        H</div>
+                    <h2 class="text-slate-100 text-xl font-bold leading-tight tracking-tight hidden md:block">High Tech
+                        Academy</h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                        href="index.html">Home</a>
+                    <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                        href="index.html#facilities">Facilities</a>
+                    <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                        href="index.html#classes">Classes</a>
+                    <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                        href="features.html">Features</a>
+                    <a class="text-white text-sm font-bold border-b-2 border-primary pb-1 transition-colors"
+                        href="gallery.html">Gallery</a>
+                    <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                        href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="relative hidden sm:block">
+                    <span
+                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+                    <input
+                        class="bg-surface-dark border border-white/10 rounded-full py-1.5 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary w-48 transition-all focus:w-64"
+                        placeholder="Titles, events, sports..." type="text" />
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="text-slate-100 hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <div class="size-8 rounded overflow-hidden cursor-pointer border border-white/20">
+                        <img class="w-full h-full object-cover" data-alt="Student profile avatar placeholder"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6sKbfS9cEwLY6rejSkEqW1h0nMpXZbOnMbBD9bDDw3bXJzJXRC2u2rfSUpuBwSfBXAKRw9cBzUg3ZhMdgZMhpD4EF4poKxFP0b26Y3SR3gL-cx3ypmlDxABzEvjx0q8v3pNnDdVOx1_GYLhkRyT0sksyY4LrOAqe-aGw6XDjLg23zBLQUEOr2yIW2lQqZQm47Z0NrczIg2aI6Fm7bNu-J3fb9RUJBje8RNDh589NebxwXq2fNYmAiHSfU-TNR0OatIu3a-Qttj2M" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 flex flex-col pt-16">
+            <section
+                class="relative w-full aspect-[21/9] min-h-[400px] flex items-end px-6 md:px-12 pb-12 overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img class="w-full h-full object-cover"
+                        data-alt="Cinematic shot of high tech school campus at sunset"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0XNiGWM0WbZ1gcth50Es3FPP7hS84qoAg2Da8HL3blp7aIZWXajI8iYIGkzmF8ncvd168CeOpcj8chIGIrZ4WLi1BXGxlWQWw-f6_otXgPr-AB5HLbyZ3OaLKoGdVkY_B5U6KuA1UnvkNnqwDMdxKids-ykBDtRjYsdgm5wX5vsS5v_M0-piidMJtGrrf6xY3Fay-ZJ9hXbKVUu_neo3UkTGcGdu3D3FyFY6W5m5EAM133tsWMxTPpHOyG0QdYY86f6kDq-VUW4w" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-transparent to-transparent">
+                    </div>
+                </div>
+                <div class="relative z-10 max-w-2xl">
+                    <span
+                        class="inline-block px-2 py-1 bg-primary/20 text-primary border border-primary/40 text-xs font-bold rounded mb-4 uppercase tracking-widest">Premium
+                        Content</span>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-xl text-white">Gallery - School Life</h1>
+                    <p class="text-slate-300 text-lg max-w-lg mb-6 line-clamp-3">Explore the daily moments, high-tech
+                        achievements, and competitive spirit that define the High Tech Academy experience.</p>
+                    <div class="flex gap-4">
+                        <button
+                            class="bg-white text-background-dark px-8 py-2 rounded font-bold flex items-center gap-2 hover:bg-slate-200 transition-colors">
+                            <span class="material-symbols-outlined fill-1">play_arrow</span> Play Tour
+                        </button>
+                        <button
+                            class="bg-slate-500/30 backdrop-blur-md text-white px-8 py-2 rounded font-bold flex items-center gap-2 hover:bg-slate-500/50 transition-colors">
+                            <span class="material-symbols-outlined">info</span> More Info
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <div class="flex flex-col gap-10 pb-20 -mt-16 relative z-20">
+                <section class="pl-6 md:pl-12">
+                    <h2 class="text-white text-xl md:text-2xl font-bold mb-4 flex items-center gap-2">
+                        Campus Life
+                        <span class="text-primary material-symbols-outlined text-sm">arrow_forward_ios</span>
+                    </h2>
+                    <div class="flex gap-4 overflow-x-scroll no-scrollbar pb-8 pr-12">
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover" data-alt="Students working in a modern robotics lab"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnseFS6WtrxMVJqvSldyPOMxQlf8g8AoojLlHErBfXnaf95qvQBBtr_QsmfWd7EgqXihMmUZCHDAvoLsm_JRqOp5Sj7-usLIn_xjP25HsD_M6-DXH6CvBo0ODgSppSjbH0TAAEOulUdMFaIao_mddspCjFILUlr6T43kpWnhWhk8F5aMC6-HqC0n1rJryXqlt99-0XRqllWRwY6byfnzrqEm4IDtFfpGDyPswJhdQbl3XeH0YgA1EFl13M0untR9nw81n1ndIP_7I" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Robotics Innovation
+                                    Hub</p>
+                                <p class="text-slate-300 text-xs">Modern Lab Session</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Group of students collaborating in a glass-walled study space"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhj3YyUgksW96YmVpy6Ix-4tDtbwbhvyDtWK9paJc6uhxrymkgiC_n8Xtm2osChN-xBM6W2_xnk8y9mkwf-SFo74yVcSJ8pKmyU8wTHExTOvdxu6ImnfJDnOJwHR-q4b09tymgQnpgOikY4ha2gC_HSDo37Oj2BTgTjSTBXJBY3_Yot1jZ8DXMiadvydZS0oyAUVm5JNfxM-NUlihL5OVq5o9InWBCCTQ3qJ-0XAgU0KWqwMIgO2vdIj-KWPt9HOv2nW3n9gTQtQs" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Collaborative Spaces
+                                </p>
+                                <p class="text-slate-300 text-xs">Creative Studio</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="High tech library with digital displays and minimalist furniture"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqelsjq_at87k4BwB_JTqZkbMHjeYNCTU4xsOkifcragrst7oC0CiRa_SMeYjswIZgTHz1vBOOJ6gFAUsc7tWlKxEmmhyTNwG1F6GQU49fVNT0fGIMNUni9Ok8QLFevY6DGMlNiJQ-P_LOQGnBW8jGkaBXVIXHxpr05UVS7CG0V7jlsWHt2zJRrDgUI0mPlc2OlGbqLzBeA8ppVf6X7tpw6sr-ZPSbZGFZSehqFZviauNsQ4ooROW-nGciMD0-GN1Y12251k0ZjeI" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Digital Library</p>
+                                <p class="text-slate-300 text-xs">Research Center</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Interactive lecture hall with students using tablets"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCUI1TPpNge4Z3Ye2UqYoZWHO-QoRH1ofnw5ObBtjyFkpEOwegph39xU18SmXXWU75eMnwUh7wr7rNKtM6HmHBBHdnxmgDBbWXf3F-P4_oVki37zRxUmYFUrWsRXKq031cgV6BoIwF2KHKzSDciBND18S4PGZ9flvbiUq6-4EfaVY0Qw35azc7oMwcwag-hJQYuCHoAiIQ2NYfLrb_bsd7BNRu32y_0d8uG9BWxveEzQE-MVSN0W7FGCAVkvSGzTPQ7idvpqdxujU" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Interactive Lectures
+                                </p>
+                                <p class="text-slate-300 text-xs">Smart Classrooms</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Students relax in a modern outdoor campus courtyard"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8wBnJ6m7g1xRbiAF_f_17pbkPtba06SLtU-BKfTFx3y90G4JezrDNPfv_P9ybspMLS6s9qlHGTewHmGu2lsxOaSMm_Wx0g7X7P9goVUXkvEh6Uq4XLCWXZD5QwBUs4vmUdQ2Qp-h3k9G9UBaC1YugRUX18L3dIDNJe-5PKCduXYv4F1fLFt10pIZlrTVuBZg2xSFkGrZxPK4DQNPNddFK_xYPeQ-ixOm55HZVjG49eyGUQ-wjo2ETqsz9C66-30-JUuV-YJiZ_9g" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Zen Courtyard</p>
+                                <p class="text-slate-300 text-xs">Recreational Area</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pl-6 md:pl-12">
+                    <h2 class="text-white text-xl md:text-2xl font-bold mb-4 flex items-center gap-2">
+                        Events &amp; Festivals
+                        <span class="text-primary material-symbols-outlined text-sm">arrow_forward_ios</span>
+                    </h2>
+                    <div class="flex gap-4 overflow-x-scroll no-scrollbar pb-8 pr-12">
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Colorful annual school festival with lights and stage"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3f3liOxNI9w4EfntKt6DLfKbMKPc59g6PQ-5IE0KheKehqqRmpZN5gY3UvstCwoEjcE2UwUhb05sDIZsf5_gFGA1e61YDHyCUkJwQzaZn9XphLm1Hk5qeyL8vXUqW6Lq31V_DW6wfP3r1Lzam0T-mZlS9w0jWzmwvOkXhL8XyNQKf2wxcHnsuyPPHJAQl5Npv_lA5vRU5v26Gq1E7xcyM_haswtagGuOD48yC3Jn80TkitJyaiLfbJ7s-dnPue4h6BMnNfBodAeU" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">HTA Annual Fest</p>
+                                <p class="text-slate-300 text-xs">Winter Celebration 2023</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Students presenting projects at a futuristic science fair"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBAmAfMDlEHO55hQo5eh6hfwUS6Roy9Jbap6a5lpm1ypF7RHM8R7l6NKS84jrVWpjjyAwRf8pJLPgOw22A_hpY1thK6YXRSfWr2C7kVe2k5LE7y-C-FhJN8AfFvZZwTyF7X8NnoOmjWPtLjzpsmYzKRStuL4zaka1eej2zik-2dgH603hlKM_oTBDtfX5mYPUcKZGfaaeTPCqW_tVd2aUZ1SNhkuUlG8lBCMuTJ-BXn5c2sDQiiUPePSsB5n4nkbUSlw1-g22lFlw" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Tech Expo</p>
+                                <p class="text-slate-300 text-xs">Innovation Showcase</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Audience cheering at a high energy school event"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE1BDCUFztiKwEJpTJQN2rGyVMebvI9lZ5uNQgIxm88xQ6nVXlF90nmRO62Q7uNoS_yJDBgFH9nmWtf05HR4JHFIcoeNKoS9L4q1UazlGNUZYeRHep5j2qfjloLCf4ALVxZWwtsf4GwnEl6gZfgSYyHnsxuPiBa6hoNeYr9DimQvLCjeupmkMy0nuuyGARsbPXqXkWMrewbw8hrKADA5Lit39SozdmBTKe4DHqX0oCtfWqDdg3RxdfPPEW7USgWsm3uDO6Nk66ftQ" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Battle of Bands</p>
+                                <p class="text-slate-300 text-xs">Live Concert Night</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Graduation ceremony with students in caps and gowns"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4SZdjAIgfAjZY2YvP7sz2ajgbc2RkWlXSTTiCHlYbbrFEgA5I0F2heLeKugK-YZpQIJlcFxwR-XJtE4ASu56hk0IN__k11lBN-OXX4UnOmNzeHm9PT9gwub-HdTLfAGoLkOSx-uXLbwRo441YhbeBkf68CTX24vPnnD_ZQxKfN2xv3pV1oei9mirn8_JfZJjsvkya0bsHXJglqsyOUPtNGQbObRaIKXR06-mSZOObJgvxBa8aIJu4uhiwC3gnwnOhpgRqHGJVuVA" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Convocation Day</p>
+                                <p class="text-slate-300 text-xs">Class of 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pl-6 md:pl-12">
+                    <h2 class="text-white text-xl md:text-2xl font-bold mb-4 flex items-center gap-2">
+                        Sports Arena
+                        <span class="text-primary material-symbols-outlined text-sm">arrow_forward_ios</span>
+                    </h2>
+                    <div class="flex gap-4 overflow-x-scroll no-scrollbar pb-8 pr-12">
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Action shot of students playing basketball on a modern court"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbNiFhBrWiT8N4sgM67mIOQMZeIlFTiCkYk0Vy5F3Qwj31-PaquE3kQt7MaCGpR_G2UnMjohBvhZZFsWABWZWTybtnan5H2LjoGVhUsYd-FOCJlYHV2IC8aseOHlrvuDgJo0obdYFvPWd-mCvhBSZhRI7eh4o_lDwfBzIbWFxlIUbfXhACov5BpkD8l8Dh79C3N3oDROq5zdeG7i0uGZlsHX1Pc1Jrv-IPDE4xmj6MiuDAI-D0aOhZAPZ_VRFghU_IqT3nbMU5478" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Varsity Basketball
+                                </p>
+                                <p class="text-slate-300 text-xs">State Finals</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover" data-alt="High energy track and field meet"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzI761FnBYyZsr_ZXI6pIylQxO---sQ2UJ41UDb1uEAdCDJrU4_BxK4aHLDz7IHZZNVc-GDGw2eaVO7uZI14Ofp64I6X8LtOcTjPbvZbxt3HzrKzHE0RrpBzvfiLu1yvf2RMWnckNogygaaX9EyCVlLB4UB8pVEh3kDCPfAVs9vwh-4zBRkd8BXOqKZs8EZOj_85tNkpbf1IUgYz_ZAPxWAi59_gBX1iCfe99ap6_FZD5aFNEf9D0oWE-OppRHNjPFLqiAuTLwgEw" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Annual Sports Meet
+                                </p>
+                                <p class="text-slate-300 text-xs">Athletic Excellence</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Students playing soccer on professional turf"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr-6Uzwhz2-E5pLfcfmcRfi52rEZ_l8Dah7loTeQfAaXGO10E4Of17psyZ-UojiJAJtgfrXrPUk_TO0EtT9-GyqDfjKEXWNEWa7bzT5wPaHzvVuPicZpLe_KU3PLSXpltF8HFFD-uIqQ3XWrMXFdmjONhBfpfchQYKLiFa5LJwUcV5z7QahOXXuy8xP843xa6jVxGCZESIVyXj36dX74Aqq1RJx_QzdJhlq4FvhMMk6vAK8lCT2zHcHPkEeH_lVPqlo-XwWAAEZ18" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">HTA Soccer League</p>
+                                <p class="text-slate-300 text-xs">Inter-house Matches</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex-none w-72 md:w-80 aspect-video rounded-lg overflow-hidden bg-surface-dark relative border border-white/5 hover:scale-105 hover:z-30 hover:border-primary transition-all duration-300 shadow-2xl">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Swimming competition in a high tech indoor pool"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUNYoWCQyEsKrdMDsDLHUYKklzw2GZph0CJ40z3Gbn_0qU1w3E6s0srfAWzyfCVwlqsklpONU7QjAOzvrpFagjTfh0Oy4gz896-pandsAfDJcaBK2uI92ywRusyhHM3vyDwFAco6wdXhegi4nmz93nSPj_Mw1QuwqydiUx0IAwPMWuGMbcGsm6a_gZiOxKQdUHRwklScZ__1WWEWl6WsoqUGQmA2JOAzO49glFkKl6NORXCuBkE_e33FBK89xyDMMKmxeN5bvUb60" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
+                                <p class="text-white font-bold text-sm uppercase tracking-tighter">Aquatic Championships
+                                </p>
+                                <p class="text-slate-300 text-xs">Indoor Olympic Pool</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-background-dark border-t border-white/10 pt-16 pb-12 px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-2 text-primary">
+                        <div
+                            class="size-6 flex items-center justify-center bg-primary rounded text-white font-bold text-sm">
+                            H</div>
+                        <h2 class="text-slate-100 text-lg font-bold">High Tech Academy</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm">Empowering the next generation of innovators through
+                        technology-driven education and global community excellence.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Explore</h3>
+                    <ul class="flex flex-col gap-2 text-slate-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Campus Tour</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Admissions</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Curriculum</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Alumni Network</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Contact Us</h3>
+                    <ul class="flex flex-col gap-2 text-slate-400 text-sm">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-xs">location_on</span> 123 Future Tech Blvd,
+                            Silicon Valley</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">mail</span>
+                            contact@hightechacademy.edu</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">phone</span>
+                            +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Social Presence</h3>
+                    <div class="flex gap-4">
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">social_leaderboard</span></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">camera</span></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">brand_awareness</span></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">video_library</span></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+                <p>© 2024 High Tech Academy. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-slate-300" href="#">Privacy Policy</a>
+                    <a class="hover:text-slate-300" href="#">Terms of Service</a>
+                    <a class="hover:text-slate-300" href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body>
+
+</html>

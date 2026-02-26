@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Special Features | High Tech Academy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e60a15",
+                        "background-light": "#f8f5f6",
+                        "background-dark": "#000000",
+                        "neutral-dark": "#141414",
+                        "hover-dark": "#333333",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .netflix-gradient {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%);
+        }
+
+        .episode-row:hover .episode-thumb {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-white">
+    <!-- Nav Bar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-background-dark border-b border-white/10 px-6 md:px-12 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-10">
+            <a class="flex items-center gap-2" href="#">
+                <span class="text-primary text-4xl font-black tracking-tighter">H</span>
+                <span class="hidden md:block text-slate-100 font-bold tracking-tight text-lg">HIGH TECH ACADEMY</span>
+            </a>
+            <nav class="hidden lg:flex items-center gap-6">
+                <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                    href="index.html#facilities">Facilities</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                    href="index.html#classes">Classes</a>
+                <a class="text-white text-sm font-bold border-b-2 border-primary pb-1 transition-colors"
+                    href="features.html">Features</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                    href="gallery.html">Gallery</a>
+                <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                    href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="relative hidden sm:block">
+                <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+                <input
+                    class="bg-neutral-dark border border-white/20 rounded-none pl-10 pr-4 py-1 text-sm focus:ring-1 focus:ring-primary focus:border-primary w-64 text-white"
+                    placeholder="Titles, labs, tech..." type="text" />
+            </div>
+            <button class="text-slate-100">
+                <span class="material-symbols-outlined text-2xl">notifications</span>
+            </button>
+            <div class="w-8 h-8 rounded bg-primary flex items-center justify-center overflow-hidden">
+                <img alt="Profile" class="w-full h-full object-cover"
+                    data-alt="Student profile avatar with red background"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQV6piQt-tS0dP5Ea6ahOAd5VaK0ZLUdqqtWls7pG3gtEg6FFDGZLzcUcg9WkuD83Y6-MaJ1cfb1YdxiTuCMlq-Fxz8y65vBDZaHdtNrNvelblUgqFhyE-nGqJLVUldRDKZXIHSTBeSq5-m6yQXT62UZYB4wubZVTU3ukpJA3fsixwwm868Pr5AELN031iJoUHsisFDJ_bkrJPHkkrSJ7EDMMFfjY3iFN3IdXrQQ2Eoad_mc4I38lBZsrVPCrQKYoZ4jWrmFfKWPQ" />
+            </div>
+        </div>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Header -->
+        <section class="relative h-[45vh] w-full overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center"
+                data-alt="Cinematic shot of modern high school interior with neon lighting"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAh5EuyQiHVjGuKxwI9-osuFFnooBrXzweUh10G3ZcyC3UfyInGtM_ScuZ98Okkgza4iAShXjHN2TpBuzkpQ_FkD9Q2s6m9i9H0lluL0LBtqtGfrhEP9v-UgBKThaU9RCnu5hrLu-y7-fgjUTYNd7i7Lbb_PAVCzP3ib8102vv2lY9BahbafI5fFA_Ls7iJd_K6iBni31vLOG-ZqmC-e2zbY7OqGKBdkex7wlcQxMQtbWkdJjecxvKBY8qGPJ_dcQIcp0aHNSSZHow')">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-background-dark via-transparent to-transparent"></div>
+            <div class="relative h-full flex flex-col justify-end px-6 md:px-12 pb-12 max-w-7xl mx-auto">
+                <span class="text-primary font-bold tracking-widest text-xs mb-2 uppercase">Original Series</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">Special Features - Bonus
+                    Content</h1>
+                <p class="text-slate-300 max-w-2xl text-lg leading-relaxed">
+                    Explore the cutting-edge environments where the future is built. Go behind the scenes of High Tech
+                    Academy's premium infrastructure.
+                </p>
+                <div class="flex gap-4 mt-6">
+                    <button
+                        class="bg-white text-black px-8 py-2 rounded font-bold flex items-center gap-2 hover:bg-slate-200 transition-colors">
+                        <span class="material-symbols-outlined fill-1">play_arrow</span> Play Tour
+                    </button>
+                    <button
+                        class="bg-white/20 text-white px-8 py-2 rounded font-bold flex items-center gap-2 hover:bg-white/30 backdrop-blur-md transition-colors">
+                        <span class="material-symbols-outlined">info</span> More Info
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Features List (Episode Style) -->
+        <section class="px-6 md:px-12 py-12 max-w-7xl mx-auto">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-8">
+                <h2 class="text-2xl font-bold text-white">Episodes</h2>
+                <div class="text-slate-400 text-sm font-medium">4 Features</div>
+            </div>
+            <div class="space-y-4">
+                <!-- Episode 1 -->
+                <div
+                    class="episode-row group flex flex-col md:flex-row gap-6 p-6 rounded-lg hover:bg-hover-dark transition-all duration-300 cursor-pointer">
+                    <div class="text-slate-500 font-bold text-2xl w-8 hidden md:block">1</div>
+                    <div
+                        class="relative aspect-video w-full md:w-64 flex-shrink-0 overflow-hidden rounded-md border border-white/5">
+                        <img class="episode-thumb w-full h-full object-cover transition-transform duration-500"
+                            data-alt="Modern computer lab with gaming chairs and multiple monitors"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuALzG-lRlI34QA6Yrwbv61Brxwa88wEww9wCG-KP3cPNxK6GEUmtq0VItYAwnv2Dj7qdAMb04SbyFAf2dKyUIjfNbf6EiZqdGSg2Z8U3cv8x5grYA28n66x9I6hCtaEV8_IiK7bCefxi1dCgg8JzHc8oEmpZjDXI902UloPdHlSZqUGOGPgcjGzEE4rksBWuk9-V7csLFCsG_8cFQl_m9Zpquw3tJNyQhyrizdbhCCrrsMBZyvjKaUE_mthb2RO2FGc0ihuLnh49qg" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                            <span class="material-symbols-outlined text-4xl text-white">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-center">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors">Episode
+                                1: State-of-the-art Computer Lab</h3>
+                            <span
+                                class="text-slate-400 text-sm font-medium bg-neutral-dark px-2 py-1 rounded border border-white/10">Open
+                                24/7</span>
+                        </div>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
+                            Equipped with NVIDIA RTX 4090 workstations and 10Gbps dedicated fiber. This lab supports AI
+                            development, 3D rendering, and professional esports training.
+                        </p>
+                    </div>
+                </div>
+                <!-- Episode 2 -->
+                <div
+                    class="episode-row group flex flex-col md:flex-row gap-6 p-6 rounded-lg hover:bg-hover-dark transition-all duration-300 cursor-pointer border-t border-white/5 md:border-t-0">
+                    <div class="text-slate-500 font-bold text-2xl w-8 hidden md:block">2</div>
+                    <div
+                        class="relative aspect-video w-full md:w-64 flex-shrink-0 overflow-hidden rounded-md border border-white/5">
+                        <img class="episode-thumb w-full h-full object-cover transition-transform duration-500"
+                            data-alt="Advanced biology lab with microscopes and glass beakers"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIjbMiILyid-yNKbdUZEthUUyRv9_uvi4bS7GWapBf6jrbXNP0L8Wv2is-OshLzbrQ8nXhdcChY1KfBC4xeuHXK_d7IlZxxqMaWu-qUWIAismJiGYjm3Q5y8cYjktzir3q4XalinhOKma3h3yBdMz20zy4y0oz_3_BN-rc7dT75u8N-uBUgYTevKKnfrUCjBXSJM67Knt9l5aNs1iZTCAQX_j5t5iC0yrDh-MWuzXWj-Skwfs2U-t-x7aIrR_f6di-2RZiRRlvM4Q" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                            <span class="material-symbols-outlined text-4xl text-white">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-center">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors">Episode
+                                2: Science Wing</h3>
+                            <span
+                                class="text-slate-400 text-sm font-medium bg-neutral-dark px-2 py-1 rounded border border-white/10">Lab
+                                Access</span>
+                        </div>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
+                            Next-gen biotechnology and physics labs featuring CRISPR kits, electron microscopes, and a
+                            controlled clean room for delicate experiments.
+                        </p>
+                    </div>
+                </div>
+                <!-- Episode 3 -->
+                <div
+                    class="episode-row group flex flex-col md:flex-row gap-6 p-6 rounded-lg hover:bg-hover-dark transition-all duration-300 cursor-pointer border-t border-white/5 md:border-t-0">
+                    <div class="text-slate-500 font-bold text-2xl w-8 hidden md:block">3</div>
+                    <div
+                        class="relative aspect-video w-full md:w-64 flex-shrink-0 overflow-hidden rounded-md border border-white/5">
+                        <img class="episode-thumb w-full h-full object-cover transition-transform duration-500"
+                            data-alt="Modern indoor basketball court and gym"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQxxswm7JvXObBVaAt51i35zYHaaWlcFotIDEbzjAGsJsFsCe7y5c0UDcB2Q0vpSJJzDzpX60FByAb2syG8WuZhMaj2CEn9DcAOJ4ak5GP8vUXli88AWLsKKg_bDFb0biGYRNCFKRbcRHCH11xAccKlQ-BxLShsNPClVcFRRjuwDKBkE6KMbJTdo5HoRhFLeozL4K9duqe5-sdbdLJlNOGKEMT5gg_b12DC1RuvLYxxMZkPWDtsXEx14aSLeDLSqFFYzeJOaQWQPk" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                            <span class="material-symbols-outlined text-4xl text-white">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-center">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors">Episode
+                                3: Sports Complex</h3>
+                            <span
+                                class="text-slate-400 text-sm font-medium bg-neutral-dark px-2 py-1 rounded border border-white/10">Olympic
+                                Grade</span>
+                        </div>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
+                            A smart-arena with performance tracking sensors, Olympic-sized swimming pool, and
+                            bio-mechanical analysis zones for elite student athletes.
+                        </p>
+                    </div>
+                </div>
+                <!-- Episode 4 -->
+                <div
+                    class="episode-row group flex flex-col md:flex-row gap-6 p-6 rounded-lg hover:bg-hover-dark transition-all duration-300 cursor-pointer border-t border-white/5 md:border-t-0">
+                    <div class="text-slate-500 font-bold text-2xl w-8 hidden md:block">4</div>
+                    <div
+                        class="relative aspect-video w-full md:w-64 flex-shrink-0 overflow-hidden rounded-md border border-white/5">
+                        <img class="episode-thumb w-full h-full object-cover transition-transform duration-500"
+                            data-alt="Futuristic library with touchscreens and quiet pods"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxyF5zPRQeQf-UoHhglJWAGoQqyAcQ2_FTFnoN4Sx4ba-pqYrv_G0OH_5W8Un18TQ-eZPb1dmzYgeVFBDC_Iy0dP3TsJFBncPPCV4ylXX9xJzD1_2-BiMIlkPgTX9LY6h6j6k16o4yKUpCk_AquN8RevZWTvqe5zCqbKNPcS0OaSN7_xtIIFeh4GfMNzj7nBWhfHYzMr0pxFy6drGIo4hvANmv6n2kH7Q40GMKA4iNwPzGH-7_FPSpDBxp5yKiD6Sma35eZM1b6ug" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                            <span class="material-symbols-outlined text-4xl text-white">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-center">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors">Episode
+                                4: Digital Library</h3>
+                            <span
+                                class="text-slate-400 text-sm font-medium bg-neutral-dark px-2 py-1 rounded border border-white/10">All
+                                Access</span>
+                        </div>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
+                            A paperless knowledge hub with VR reading pods, holographic data visualizations, and access
+                            to over 500 million global research publications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="mt-20 border-t border-white/10 bg-background-dark py-16 px-6 md:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                    <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-2 mb-6">
+                            <span class="text-primary text-3xl font-black">H</span>
+                            <span class="text-white font-bold tracking-tight text-lg">HIGH TECH</span>
+                        </div>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Pioneering the next generation of innovators and leaders through immersion in world-class
+                            technology.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Connect</h4>
+                        <ul class="space-y-4 text-slate-500 text-sm">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">location_on</span> 123 Innovation Drive,
+                                Silicon Valley</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">phone</span> +1 (555) TECH-EDU</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-sm">mail</span> contact@hightechacademy.edu
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Navigation</h4>
+                        <ul class="space-y-4 text-slate-500 text-sm">
+                            <li><a class="hover:text-white transition-colors" href="#">Campus Tour</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Admissions</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Curriculum</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Student Portal</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Socials</h4>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined">public</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined">smart_display</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined">groups</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-xs">
+                    <p>© 2024 High Tech Academy High School. All Rights Reserved.</p>
+                    <div class="flex gap-8">
+                        <a class="hover:text-slate-400 transition-colors" href="#">Privacy Policy</a>
+                        <a class="hover:text-slate-400 transition-colors" href="#">Terms of Service</a>
+                        <a class="hover:text-slate-400 transition-colors" href="#">Cookie Preferences</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
